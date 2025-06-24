@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+body {
+  background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Fredoka One", cursive, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alarm-container {
+  background: #fffbe7;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(255, 78, 80, 0.15);
+  padding: 32px 24px 24px 24px;
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  color: #ff4e50;
+  font-size: 2rem;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.clock-analog {
+  margin: 0 auto 16px auto;
+  width: 180px;
+  height: 180px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(249, 212, 35, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.clock-digital {
+  font-size: 2rem;
+  color: #f9d423;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0 #fffbe7, 2px 2px 0 #ff4e50;
+}
+
+.alarm-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.alarm-form label {
+  font-size: 1rem;
+  color: #ff4e50;
+  margin-right: 2px;
+}
+
+.alarm-form select {
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #f9d423;
+  padding: 4px 8px;
+  background: #fffbe7;
+  color: #ff4e50;
+  font-family: inherit;
+  margin-right: 6px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.alarm-form select:focus {
+  border: 2px solid #ff4e50;
+}
+
+.ok-btn,
+.reset-btn {
+  font-size: 1rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 18px;
+  margin-left: 4px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.ok-btn {
+  background: #f9d423;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(249, 212, 35, 0.15);
+}
+
+.ok-btn:hover {
+  background: #ff4e50;
+  color: #fffbe7;
+}
+
+.reset-btn {
+  background: #ff4e50;
+  color: #fffbe7;
+  box-shadow: 0 2px 8px rgba(255, 78, 80, 0.15);
+}
+
+.reset-btn:hover {
+  background: #f9d423;
+  color: #fff;
+}
+
+.alarm-desc {
+  color: #ff4e50;
+  font-size: 1.05rem;
+  margin-top: 24px;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: "Fredoka One", cursive, sans-serif;
+  line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+  .alarm-container {
+    padding: 16px 4px 16px 4px;
+    max-width: 98vw;
+  }
+  .clock-analog {
+    width: 120px;
+    height: 120px;
+  }
+  .clock-digital {
+    font-size: 1.3rem;
+  }
+}

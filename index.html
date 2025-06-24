@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playful Web Alarm Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="alarm-container">
+      <h1 class="title">⏰ Playful Web Alarm Clock</h1>
+      <div class="clock-analog" id="clock-analog"></div>
+      <div class="clock-digital" id="clock-digital">00:00:00</div>
+      <form class="alarm-form" id="alarm-form">
+        <label for="alarm-hour">Hour:</label>
+        <select id="alarm-hour" name="alarm-hour"></select>
+        <label for="alarm-minute">Min:</label>
+        <select id="alarm-minute" name="alarm-minute"></select>
+        <label for="alarm-second">Sec:</label>
+        <select id="alarm-second" name="alarm-second"></select>
+        <button type="submit" id="set-alarm" class="ok-btn">OK</button>
+        <button type="button" id="reset-alarm" class="reset-btn">Reset</button>
+      </form>
+      <audio
+        id="alarm-audio"
+        src="youtube-intro-291172.mp3"
+        preload="auto"
+      ></audio>
+      <p class="alarm-desc">
+        This playful web alarm clock lets you set a countdown for up to 2 hours.
+        When time's up, enjoy a cheerful sound! Works on both PC and mobile.
+        ⏰🎉
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
